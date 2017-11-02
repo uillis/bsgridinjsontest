@@ -1,0 +1,186 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+	    "rows": [
+	   			 {
+				    	"columns" : [
+				    		{ 
+					    		"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "self",
+					        		"initNow" : true,
+					        		"dataUrl" : "widgetstubs/vehicle.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Vehicle Widget Loaded Here",
+					        		"description" : "The One with a Contact Button and Vehicle Info",
+					        		"callout" : "",
+					        		"image" : ""
+					        	}
+
+				    		}
+				    	]
+				    },
+
+				    {
+				    	"columns" : [
+				    		{ 
+					    		"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+
+					        	"widget": {
+					        		"openAs" : "self",
+					        		"initNow" : true,
+					        		"dataUrl" : "widgetstubs/features.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Features Widget Loaded Here",
+					        		"description" : "The One with Features, Images and Animations",
+					        		"callout" : "\u00a0",
+					        		"image" : ""
+					        	}
+
+				    		}
+				    	]
+				    },
+				    {
+				    	"columns" : [
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/galleryData.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Video Gallery",
+					        		"description" : "Every Pic, 360 & Video",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/goodDeal.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Good Deal?",
+					        		"description" : "See What Others Pay",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/unknown.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Additional Widget..",
+					        		"description" : "Description",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/unknown.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Additional Widget..",
+					        		"description" : "Description",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/unknown.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Additional Widget..",
+					        		"description" : "Description",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-12",
+						        	"col-md-12",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget": {
+					        		"openAs" : "top",
+					        		"initNow" : false,
+					        		"dataUrl" : "widgetstubs/unknown.json",
+					        		"path" : "pathtoWidget"
+					        	},
+					        	"tile" : {
+					        		"title":"Additional Widget..",
+					        		"description" : "Description",
+					        		"callout" : "Learn More",
+					        		"image" : ""
+					        	}
+				    		}
+				    	]
+				    
+				    }
+			]
+	}
+}
