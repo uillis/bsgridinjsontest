@@ -1,0 +1,88 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+	   	"mainImage": "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+        "sectionHeader" : "Video Gallery",
+        "sectionSubHeader" : "Every Pic, 360 & Video",
+        
+        "components" : [
+		    {
+		        "name": "Gallery",
+		        "image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u650.png?token=f48a9456c26f4e8211b942e1b68cd046",
+		        "galleryList" : [
+		        	{
+		        		"image" :"http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+		        		"imageIndex":1
+		        	},
+		        	{
+		        		"image" :"http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+		        		"imageIndex":2
+		        	},
+		        	{
+		        		"image" :"http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+		        		"imageIndex":3
+		        	},
+		        	{
+		        		"image" :"http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+		        		"imageIndex":4
+		        	},
+		        	{
+		        		"image" :"http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u178.jpg?token=b11d84cba6474d598209fc007837bdce",
+		        		"imageIndex":5
+		        	}	
+		        ]
+		    },
+		    {
+		        "name": "360 Spin",
+		        "image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        "spinWidgetConfig": "http://localhost/json_stubs/config.json",
+		        "spinWidgetData": "http://localhost/json_stubs/data.json"
+		    },
+		    {
+		        "name": "Videos",
+		        "logo" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u656.png?token=0e989698de47dd1894110e5cd6122e65",
+		        "videoList": [
+		        	{
+		        		"image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        		"videoHeader" : "2018 Corvette Stingray",
+		        		"subHeader" : "Stock: J5101246   VIN:1G1YB2D72J5101246",
+		        		"video" : "http://unityworks-a.akamaihd.net/anon.unityworks/N/9/U/36778694_Chevrolet_17_Corvette_170307_170308035947_3.mp4",
+		        		"description" : " "
+		        	},
+		        	{
+		        		"image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        		"videoHeader" : "2018 Corvette Overview",
+		        		"subHeader" : "",
+		        		"video" : "http://unityworks-a.akamaihd.net/anon.unityworks/N/9/U/36778694_Chevrolet_17_Corvette_170307_170308035947_3.mp4",
+		        		"description" : "You demand performance. You expect precision. And you’ll get it – in one of the most iconic sports cars in the world – the provocatively-designed Corvette Stingray. Your Corvette comes in a coupe or convertible in 3 models… the Stingray, the Grand Sport or the Z06, there’s a Stingray to fit your style.The 6.2 liter V8* in the Stingray is an engineering masterpiece that gets you to 60 in 3.7 seconds*. Thanks to race-proven technologies, it’s lean and mean. It’s equally at home on the track as the freeway with perfectly balanced performance combining revolutionary power with efficiency**. Inside you’ll find the same craftsmanship that went under the hood, with hand-stitched leather and aluminum accents. And this Corvette’s connected. Smart devices seamlessly connect to the internet via available technologies. A number of exhilarating exterior colors are available as well as 3 unique design packages allowing you to boldly customize your Corvette. Make other drivers do a double take when you pass them in your Corvette. "
+		        	},
+		        	{
+		        		"image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        		"videoHeader" : "2018 Corvette performance",
+		        		"subHeader" : "",
+		        		"video" : "http://unityworks-a.akamaihd.net/anon.unityworks/N/9/U/36778694_Chevrolet_17_Corvette_170307_170308035947_3.mp4",
+		        		"description" : "2018 Corvette Performance<br> Befitting a true performance sports car, a 6.2-liter LT1 V8 engine and a choice of 7-speed manual with active rev matching or available 8-speed paddle-shift automatic transmission, are at the heart of the Stingray. The Z51 performance package makes the Stingray track-ready with a dry sump oil system for high-G cornering and other enhancements. You won’t want to slow down but when it comes time, the ventilated 4-piston Brembo brakes are standard on all Corvette models. "		        	
+		        	},
+					{
+		        		"image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        		"videoHeader" : "2018 Corvette Safety",
+		        		"subHeader" : "",
+		        		"video" : "http://unityworks-a.akamaihd.net/anon.unityworks/N/9/U/36778694_Chevrolet_17_Corvette_170307_170308035947_3.mp4",
+		        		"description" : "2018 Corvette Performance<br> Befitting a true performance sports car, a 6.2-liter LT1 V8 engine and a choice of 7-speed manual with active rev matching or available 8-speed paddle-shift automatic transmission, are at the heart of the Stingray. The Z51 performance package makes the Stingray track-ready with a dry sump oil system for high-G cornering and other enhancements. You won’t want to slow down but when it comes time, the ventilated 4-piston Brembo brakes are standard on all Corvette models. "		        	
+		        	},
+		        	{
+		        		"image" : "http://d2t44wh9rnwl5y.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u653.png?token=d8a8f76df733baf03a33e25107bf250e",
+		        		"videoHeader" : "2018 Corvette Technology",
+		        		"subHeader" : "",
+		        		"video" : "http://unityworks-a.akamaihd.net/anon.unityworks/N/9/U/36778694_Chevrolet_17_Corvette_170307_170308035947_3.mp4",
+		        		"description" : "2018 Corvette Performance<br> Befitting a true performance sports car, a 6.2-liter LT1 V8 engine and a choice of 7-speed manual with active rev matching or available 8-speed paddle-shift automatic transmission, are at the heart of the Stingray. The Z51 performance package makes the Stingray track-ready with a dry sump oil system for high-G cornering and other enhancements. You won’t want to slow down but when it comes time, the ventilated 4-piston Brembo brakes are standard on all Corvette models. "		        	
+		        	}
+
+
+		        ]
+		    }		
+	    ]
+	}
+}

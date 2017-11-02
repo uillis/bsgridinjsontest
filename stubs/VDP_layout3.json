@@ -4,10 +4,37 @@
   	"errors": false,
   	"data": {
 	    "rows": [
+	   		{
+	   		  "rowIndex" : 0,
+			  "columns" : [
+			   		{ 
+				    		"displayClasses":[
+					    		"col-lg-12",
+					        	"col-md-12",
+								"col-sm-12",
+					        	"col-xm-12"
+				        	],
+				        	"widget": {
+				        		"openAs" : "self",
+				        		"initNow" : true,
+				        		"dataUrl" : "widgetstubs/vehicle.json",
+				        		"path" : "pathtoWidget"
+				        	},
+				        	"tile" : {
+				        		"title":"Vehicle Widget Loaded Here",
+				        		"description" : "The One with a Contact Button and Vehicle Info",
+				        		"callout" : "",
+				        		"image" : ""
+				        	}
+
+			   		}
+			   	]
+			},
 	    	{
 			 "rowIndex" : 1,
 			 "displayClasses" : [],
 			 "columns": [
+
 				 	{
 			        	"columnIndex": 1,
 
@@ -27,16 +54,40 @@
 								        	"col-md-12",
 											"col-sm-12",
 								        	"col-xm-12"
-							        	]
+							        	],
+							        	"widget": {
+							        		"openAs" : "top",
+							        		"initNow" : false,
+							        		"dataUrl" : "widgetstubs/galleryData.json",
+							        		"path" : "pathtoWidget"
+							        	},
+							        	"tile" : {
+							        		"title":"Video Gallery",
+							        		"description" : "Every Pic, 360 & Video",
+							        		"callout" : "Learn More",
+							        		"image" : ""
+							        	}
 			        				},
 			        				{ 
-			        					"widget" : "nested widget",
+			       
 			        					"displayClasses" : [
 								        	"col-lg-12",
 								        	"col-md-12",
 											"col-sm-12",
 								        	"col-xm-12"
-							        	]
+							        	],
+								        "widget": {
+								        	"openAs" : "top",
+								        	"initNow" : false,
+								        	"dataUrl" : "widgetstubs/goodDeal.json",
+								        	"path" : "pathtoWidget"
+								        },
+								        "tile" : {
+								        	"title":"Good Deal?",
+								        	"description" : "See What Others Pay",
+								        	"callout" : "Learn More",
+								        	"image" : ""
+								        }
 			        				}
 			        			]
 			        		}
@@ -44,7 +95,7 @@
 			        
 
 			   		},
-			   						 	{
+			   		{
 			        	"columnIndex": 2,
 			        	"displayClasses" : [
 				        	"col-lg-8",
@@ -52,42 +103,24 @@
 							"col-sm-8",
 				        	"col-xm-8"
 			        	],
-						"widget" : "widget1"
+						"widget": {
+					    	"openAs" : "self",
+					    	"initNow" : true,
+					    	"dataUrl" : "widgetstubs/features.json",
+					    	"path" : "pathtoWidget"
+					    },
+					    "tile" : {
+					    	"title":"Features Widget Loaded Here",
+					    	"description" : "The One with Features, Images and Animations",
+					    	"callout" : "\u00a0",
+					    	"image" : ""
+					    }
 
 			   		}
 				]
 		    },
-
 		    {
 			 "rowIndex" : 2,
-			 "displayClasses" : [],
-			 "columns": [
-				 	{
-			        	"columnIndex": 1,
-			        	"displayClasses" : [
-				        	"col-lg-12",
-				        	"col-md-12",
-							"col-sm-12",
-				        	"col-xm-12"
-			        	],
-
-			        	"widget": "http://localhost/features",
-			        	"dataUrl": "http://localhost/stubs/features.json",
-			        	"activeOnInit" : true,
-
-			        	"tileContent" : {
-				        	"title" : "Notable Features",
-				        	"description" : "Quickly Get To What Matters.",
-				        	"calloutText" : "LEARN MORE",
-				        	"thumbImage" : ""
-			        	}
-			        	
-			   		}
-				]
-		    },
-
-		    {
-			 "rowIndex" : 3,
 			 "columns": [
 
 				 	{
@@ -98,16 +131,18 @@
 							"col-sm-6",
 				        	"col-xm-12"
 			        	],
-
-			        	"widget": "http://localhost/goodDeal",
-			        	"dataUrl": "http://localhost/stubs/goodDeal.json",
-			        	"activeOnInit" : false,
-			        	"tileContent" : {
-				        	"title" : "Good Deal?",
-				        	"description" : "See What Others Pay",
-				        	"calloutText" : "LEARN MORE",
-				        	"image" : ""
-			        	}
+					    "widget": {
+					    	"openAs" : "top",
+					    	"initNow" : false,
+					    	"dataUrl" : "widgetstubs/unknown.json",
+					    	"path" : "pathtoWidget"
+					    },
+					    "tile" : {
+					    	"title":"Additional Widget..",
+					    	"description" : "Description",
+					    	"callout" : "Learn More",
+					    	"image" : ""
+					    }
 			   		},
 
 			   		{
@@ -118,17 +153,18 @@
 							"col-sm-6",
 				        	"col-xm-12"
 			        	],
-
-			        	"widget": "http://localhost/gallery",
-			        	"dataUrl": "http://localhost/stubs/galleryData.json",
-			        	"activeOnInit" : false,
-
-			        	"tileContent" : {
-				        	"title" : "Video Gallery",
-				        	"description" : "Every Pic, 360 & Video",
-				        	"calloutText" : "LEARN MORE",
-				        	"thumbImage" : ""
-			        	}
+					    "widget": {
+					    	"openAs" : "top",
+					    	"initNow" : false,
+					    	"dataUrl" : "widgetstubs/unknown.json",
+					    	"path" : "pathtoWidget"
+					    },
+					    "tile" : {
+					    	"title":"Additional Widget..",
+					    	"description" : "Description",
+					    	"callout" : "Learn More",
+					    	"image" : ""
+					    }
 
 			   		}
 				]

@@ -1,0 +1,19 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+	    "vehicleDetailData": {
+	        "year": "2018",
+	        "make" : "Chevrolet",
+	        "model" : "Corvette Stingray RWD 1LT",
+	        "stock": "J5101246",
+	        "vin":"1G1YB2D72J5101246"
+		},
+		"dealerContactData": {
+	        "dealerName": "John Doe",
+	        "email" : "contact@dealer.com",
+	        "dealerId" : "123444"
+		}
+	}
+}

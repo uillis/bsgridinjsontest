@@ -1,0 +1,27 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+	    "priceData": {
+			  "yourPrice": {
+		        "price": "62205.00",
+		        "msrp" : "",
+		        "dealInfo": "Great Deal! You get 4% below MSRP",
+		        "dealType":"good"
+		    },
+		    "trueCarPrice": {
+		        "price": "63340.00",
+		        "logo" : "http://d26uhratvi024l.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u322.png?token=a9027312782da91dbb783108d9d32e18"
+		    },
+		    "edmudsPrice": {
+		        "price": "65340.00",
+		        "logo" : "http://dxlfb468n8ekd.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u327.png?token=9cccfcbb41676e4f977654eb38cfc254"
+		    },
+		    "bluebookPrice": {
+		        "price": "66340.00",
+		        "logo" : "http://d2v8ggac1o0f6z.cloudfront.net/gsc/OFVPMW/48/6b/6c/486b6ce500a64f5c90000392d600116a/images/mobile_vdp/u332.png?token=5c92c9186f4154a6037236a34f6a0546"
+		    }		
+	    }
+	}
+}

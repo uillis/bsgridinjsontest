@@ -7,83 +7,106 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- bstrap -->
+
+	<!-- highlighting https://highlightjs.org/download/ -->
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
 </head>
 <body>
 	<style>
-	/*fill all column divs with padding*/
+		div {
+			box-shadow: inset 0px 0px 1px #000;
+		}
 
-	div {
-		box-shadow: inset 0px 0px 1px #000;
-	}
+		.row{
+			border: 1px solid red;
+			position: relative;
+			color:white;
+			text-shadow: 1px 0px 0px black;
+		}
 
-	.row{
-		border: 1px solid red;
-		position: relative;
-		color:white;
-		text-shadow: 1px 0px 0px black;
-	}
+		.row:after{
+			content : 'row';
+			position: absolute;
+			z-index: 100;
+			color: red;
+			top:0;
+			font-size: 10px;
+			right:10px;
+			text-shadow:1px 0px 1px black;
 
-	.row:after{
-		content : 'row';
-		position: absolute;
-		z-index: 100;
-		color: red;
-		top:0;
-		font-size: 10px;
-		right:10px;
-		text-shadow:1px 0px 1px black;
+		}
+		.column{
+			min-height: 1vh;
+		}
 
-	}
+		.column ul{
+			padding-top:16px;
+		}
 
-	.column{min-height: 50px;}
+		#target.container-fluid{
+			margin-top: 5vh;
+			 max-width:1170px;
+		}
 
 	</style>
 
 
 <header style="padding: 15px; padding-bottom: 35px;">
 	<h4 style="width:66%; display:inline-block; vertical-align:top;">
-			Bootstrap Layout Grid Represented as json <small id="urlnote"></small>
+			Bootstrap Layout Grid Represented as json <br><small id="urlnote"></small>
 	</h4>
 	<select id="switch-json" class="form-control" style="width:32%; display:inline-block;">
 	  <option value='stubs/VDP_layout1.json' > layout 1</option>
 	  <option value='stubs/VDP_layout2.json' > layout 2</option>
 	  <option value='stubs/VDP_layout3.json' > layout 3</option>
-	  <option value='stubs/VDP_layout4.json' > layout 4</option>
-	  <option value='stubs/VDP_layout5.json' > layout 5</option>
 	</select>
 </header>
 
-	<!-- target for grid-->
-	<div id="target" class="container" ></div>
- 
-	<textarea>
 
-	</textarea>
+<!-- target for grid-->
+<div id="target" class="container-fluid" ></div>
+<!-- target for grid-->
 
-<script>
-var uris = [
 
-];
-</script>
+
+
+
+<pre style="margin-top: 10vh;">
+loaded json : 	
+<code id="raw" class="json" style="width:100%; min-height: 10vh;"></code>
+</pre>
 <script src="quickstuff.js"></script>
 
 <script>
 
-
-
 document.getElementById('switch-json').addEventListener('change',function(e){
 	if(typeof e.target.value === "string"){
+
 		var gridtarget = document.getElementById('target');
 		gridtarget.innerHTML = '';
+
+		var rawtarget = document.getElementById('raw');
+		rawtarget.innerHTML = '';
+
+
 		var urlnote = document.getElementById('urlnote');
 
 		loadJSON( e.target.value , function(data){
+
 			urlnote.textContent = e.target.value;
 			appendDom(gridtarget, data.data);
 			randomColorDivs();
+
+						rawtarget.innerHTML =  JSON.stringify(data, null, '\t');
+						hljs.highlightBlock(rawtarget);
+
 		});
 	}
 });
+
 document.getElementById('switch-json').dispatchEvent(new Event('change'));
 
 	
@@ -115,8 +138,8 @@ function appendDom(domelement, obj, parent) {
 
 				target.appendChild(temp);
 
-				if(obj[k].widget){
-					writeWidgetTile(temp,obj[k].widget);
+				if(obj[k].tile){
+					writeWidgetTile(temp,obj[k].tile);
 				}
 
 			}
@@ -129,8 +152,28 @@ function appendDom(domelement, obj, parent) {
 };
 
 
-function writeWidgetTile(target,widget){
-	target.textContent = widget;
+function writeWidgetTile(target,tile){
+
+	try{
+		var ul = document.createElement("ul");
+			ul.className = 'list-unstyled';
+
+		var t = document.createElement("li");
+			t.textContent = tile.title;
+		var d = document.createElement("li");
+			d.className = 'small';
+			d.textContent = tile.description;
+		var c = document.createElement("li");
+			c.className = 'small';
+			c.textContent = tile.callout;
+
+			target.appendChild(ul);
+			ul.appendChild(t);
+			ul.appendChild(d);
+			ul.appendChild(c);
+
+	}catch(e){console.error('tile format : ',e);}
+
 }
 
 
