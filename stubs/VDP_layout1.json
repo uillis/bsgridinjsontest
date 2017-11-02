@@ -1,0 +1,91 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+	    "rows": [
+				    {
+				    	"columns" : [
+				    		{ 
+					    		"displayClasses":[
+						    		"col-lg-7",
+						        	"col-md-7",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+					        	"widget":"Widget 1"
+				    		},
+				    		{ 
+					    		"displayClasses":[
+						    		"col-lg-5",
+						        	"col-md-5",
+									"col-sm-12",
+						        	"col-xm-12"
+					        	],
+								"widget":"Widget 2"
+
+				    		}
+				    	]
+				    },
+				    {
+				    	"columns" : [
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 3"
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 4"
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 5"
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 6"
+				    		},
+				    		{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 7"
+				    		}
+				    		,{
+				    			"displayClasses":[
+						    		"col-lg-2",
+						        	"col-md-3",
+									"col-sm-6",
+						        	"col-xm-6"
+					        	],
+					        	"widget":"Widget 8"
+				    		}
+				    	]
+				    
+				    }
+			]
+	}
+}

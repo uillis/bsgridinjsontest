@@ -1,0 +1,67 @@
+{
+	"success": true,
+  	"message": "",
+  	"errors": false,
+  	"data": {
+  		"name": "root set of rows",
+	    "rows": [
+				    {	
+				    	"name": "row-A",
+				    	"columns" : [
+				    		{
+				    			"name": "row-A column-1 i take up the whole width always",
+				    			"displayClasses" : [
+					    			"col-sm-6",
+					    			"col-xs-6",
+					    			"col-md-6"
+				    			]
+
+				    		},
+				    		{
+				    			"name": "row-A column-1 i take up the whole width always",
+				    			"displayClasses" : [
+					    			"col-sm-6",
+					    			"col-xs-6",
+					    			"col-md-6"
+				    			]
+				    		}
+				    	]
+				    },
+				    {	
+				    	"name": "row-B",
+				    	"columns" : [
+				    		{
+				    			"name": "row-A column-1 i take up the whole width always",
+				    			"displayClasses" : [
+					    			"col-sm-12",
+					    			"col-xs-12",
+					    			"col-md-12"
+				    			]
+				    		}
+				    	]
+				    },
+				    {	
+				    	"name": "row-B",
+				    	"columns" : [
+				    		{
+				    			"name": "row-A column-1 i take up the whole width always",
+				    			"displayClasses" : [
+					    			"col-sm-12",
+					    			"col-xs-12",
+					    			"col-md-12"
+				    			]
+				    		},
+				    		{
+				    			"name": "row-A column-1 i take up the whole width always",
+				    			"displayClasses" : [
+					    			"col-sm-12",
+					    			"col-xs-12",
+					    			"col-md-12"
+				    			]
+				    		}
+				    	]
+				    }
+
+		]
+	}
+}

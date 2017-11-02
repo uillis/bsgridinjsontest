@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- bstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- bstrap -->
+</head>
+<body>
+	<style>
+	/*fill all column divs with padding*/
+
+	div {
+		box-shadow: inset 0px 0px 1px #000;
+	}
+
+	.row{
+		border: 1px solid red;
+		position: relative;
+		color:white;
+		text-shadow: 1px 0px 0px black;
+	}
+
+	.row:after{
+		content : 'row';
+		position: absolute;
+		z-index: 100;
+		color: red;
+		top:0;
+		font-size: 10px;
+		right:10px;
+		text-shadow:1px 0px 1px black;
+
+	}
+
+	.column{min-height: 50px;}
+
+	</style>
+
+
+<header style="padding: 15px; padding-bottom: 35px;">
+	<h4 style="width:66%; display:inline-block; vertical-align:top;">
+			Bootstrap Layout Grid Represented as json <small id="urlnote"></small>
+	</h4>
+	<select id="switch-json" class="form-control" style="width:32%; display:inline-block;">
+	  <option value='stubs/VDP_layout1.json' > layout 1</option>
+	  <option value='stubs/VDP_layout2.json' > layout 2</option>
+	  <option value='stubs/VDP_layout3.json' > layout 3</option>
+	  <option value='stubs/VDP_layout4.json' > layout 4</option>
+	  <option value='stubs/VDP_layout5.json' > layout 5</option>
+	</select>
+</header>
+
+	<!-- target for grid-->
+	<div id="target" class="container" ></div>
+ 
+	<textarea>
+
+	</textarea>
+
+<script>
+var uris = [
+
+];
+</script>
+<script src="quickstuff.js"></script>
+
+<script>
+
+
+
+document.getElementById('switch-json').addEventListener('change',function(e){
+	if(typeof e.target.value === "string"){
+		var gridtarget = document.getElementById('target');
+		gridtarget.innerHTML = '';
+		var urlnote = document.getElementById('urlnote');
+
+		loadJSON( e.target.value , function(data){
+			urlnote.textContent = e.target.value;
+			appendDom(gridtarget, data.data);
+			randomColorDivs();
+		});
+	}
+});
+document.getElementById('switch-json').dispatchEvent(new Event('change'));
+
+	
+function appendDom(domelement, obj, parent) {
+
+	var target = domelement;
+	var temp = target;
+
+
+	for (var k in obj)
+    {
+		if ( 
+			(typeof obj[k] === "object" && obj[k] !== null) &&
+			(( parent && parent.hasOwnProperty('rows') ||  parent && parent.hasOwnProperty('columns')))
+			) {
+				temp = document.createElement("div");
+				
+				if(parent && parent.hasOwnProperty('rows')){
+					temp.className = 'row ';
+				}
+				if(parent && parent.hasOwnProperty('columns')){
+					temp.className = 'column ';
+				}
+
+				if(obj[k] && obj[k]['displayClasses']){
+					temp.className += obj[k]['displayClasses'].join(' ');
+					temp.title = temp.className;
+				}
+
+				target.appendChild(temp);
+
+				if(obj[k].widget){
+					writeWidgetTile(temp,obj[k].widget);
+				}
+
+			}
+		if(typeof obj[k] === "object" && obj[k] !== null){	
+			appendDom(temp , obj[k] , obj);
+		}
+
+    }
+
+};
+
+
+function writeWidgetTile(target,widget){
+	target.textContent = widget;
+}
+
+
+
+
+
+var randomColorDivs = function (){
+var divs = document.querySelectorAll('.column');
+	for (var i = 0; i < divs.length; i++) {
+
+		var x=Math.round(0xffffff * Math.random()).toString(16);
+		var y=(6-x.length);
+		var z="000000";
+		var z1 = z.substring(0,y);
+		var color= "#" + z1 + x;
+
+		divs[i].style.backgroundColor =  color;
+	};
+}
+
+
+</script>
+
+</body>
+</html>
